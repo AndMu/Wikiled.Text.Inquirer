@@ -10,17 +10,9 @@ using Wikiled.Text.Inquirer.Data;
 
 namespace Wikiled.Text.Inquirer.Logic
 {
-    public class InquirerManager
+    public class InquirerManager : IInquirerManager
     {
         private readonly Dictionary<string, List<InquirerRecord>> items = new Dictionary<string, List<InquirerRecord>>(StringComparer.OrdinalIgnoreCase);
-
-        public static Lazy<InquirerManager> Default { get; } = new Lazy<InquirerManager>(
-            () =>
-                {
-                    var instance = new InquirerManager();
-                    instance.Load();
-                    return instance;
-                });
 
         public int Total => items.Count;
 
