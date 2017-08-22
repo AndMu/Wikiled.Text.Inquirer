@@ -94,6 +94,7 @@
     <Compile Include="Lasswell\SkillData.cs" />
     <Compile Include="Lasswell\WealthData.cs" />
     <Compile Include="Lasswell\WellBeingData.cs" />
+    <Compile Include="Logic\IInquirerManager.cs" />
     <Compile Include="Logic\InquirerDefinitionFactory.cs" />
     <Compile Include="Logic\InquirerManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

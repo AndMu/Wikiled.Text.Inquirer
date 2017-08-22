@@ -10,7 +10,7 @@ using Wikiled.Text.Inquirer.Data;
 
 namespace Wikiled.Text.Inquirer.Logic
 {
-    public class InquirerManager
+    public class InquirerManager : IInquirerManager
     {
         private readonly Dictionary<string, List<InquirerRecord>> items = new Dictionary<string, List<InquirerRecord>>(StringComparer.OrdinalIgnoreCase);
 
