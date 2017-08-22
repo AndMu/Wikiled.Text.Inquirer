@@ -12,27 +12,9 @@ namespace Wikiled.Text.Inquirer.Logic
 {
     public class InquirerManager
     {
-        private static readonly Lazy<InquirerManager> loaded;
-
         private readonly Dictionary<string, List<InquirerRecord>> items = new Dictionary<string, List<InquirerRecord>>(StringComparer.OrdinalIgnoreCase);
 
-        static InquirerManager()
-        {
-            loaded = new Lazy<InquirerManager>(
-                () =>
-                    {
-                        var instance = new InquirerManager();
-                        instance.Load();
-                        return instance;
-                    });
-        }
-
         public int Total => items.Count;
-
-        public static InquirerManager GetLoaded()
-        {
-            return loaded.Value;
-        }
 
         public InquirerDefinition GetDefinitions(string word)
         {
