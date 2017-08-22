@@ -4,8 +4,7 @@
     <id>Wikiled.Text.Inquirer</id>
     <version>1.0.0</version>
     <authors>Wikiled</authors>
-    <description>Wikiled Inquirer API</description>
-    <authors>Wikiled</authors>
+    <description>Wikiled Inquirer API</description>    
     <projectUrl>https://github.com/AndMu/Wikiled.Text.Inquirer</projectUrl>
   </metadata>
   <files>

@@ -126,7 +126,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <EmbeddedResource Include="Resources\inquirer.dat" />
-    <None Include="Wikiled.MachineLearning.nuspec" />
+    <None Include="Wikiled.Text.Inquirer.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
