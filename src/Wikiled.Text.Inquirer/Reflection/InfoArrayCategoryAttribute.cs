@@ -15,11 +15,11 @@ namespace Wikiled.Text.Inquirer.Reflection
             TextField = textField;
             ValueField = valueField;
         }
-        
-        public string Name { get; private set; }
 
-        public string TextField { get; private set; }
+        public string Name { get; }
 
-        public string ValueField { get; private set; }
+        public string TextField { get; }
+
+        public string ValueField { get; }
     }
 }

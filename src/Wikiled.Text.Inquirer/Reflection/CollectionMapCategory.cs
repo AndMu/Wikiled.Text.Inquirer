@@ -15,12 +15,7 @@ namespace Wikiled.Text.Inquirer.Reflection
             Attribute = attribute;
         }
 
-        protected override IEnumerable<IMapField> ConstructAllChildFields()
-        {
-            yield break;
-        }
-
-        public override IMapField[] Fields { get; } = {};
+        public override IMapField[] Fields { get; } = { };
 
         public InfoArrayCategoryAttribute Attribute { get; }
 
@@ -29,9 +24,9 @@ namespace Wikiled.Text.Inquirer.Reflection
             var collection = (IEnumerable)instance;
             PropertyInfo textProperty = null;
             PropertyInfo valueProperty = null;
-            foreach(var item in collection)
+            foreach (var item in collection)
             {
-                if(textProperty == null)
+                if (textProperty == null)
                 {
                     Type itemType = item.GetType();
                     textProperty = itemType.GetProperty(Attribute.TextField);
@@ -45,6 +40,11 @@ namespace Wikiled.Text.Inquirer.Reflection
                 DataItem dataItemitem = new DataItem(Name, name, name, value);
                 yield return dataItemitem;
             }
+        }
+
+        protected override IEnumerable<IMapField> ConstructAllChildFields()
+        {
+            yield break;
         }
     }
 }

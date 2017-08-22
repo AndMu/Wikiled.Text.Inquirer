@@ -4,20 +4,20 @@ namespace Wikiled.Text.Inquirer.Reflection
 {
     public interface IMapField
     {
-        T GetValue<T>(object instance);
-
-        void SetValue(object instance, object value);
-
         IMapCategory Category { get; }
-
-        string Name { get; }
 
         string Description { get; }
 
-        Type ValueType { get; }
-
         bool IsOptional { get; }
 
+        string Name { get; }
+
         int Order { get; }
+
+        Type ValueType { get; }
+
+        T GetValue<T>(object instance);
+
+        void SetValue(object instance, object value);
     }
 }

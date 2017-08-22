@@ -6,9 +6,9 @@ namespace Wikiled.Text.Inquirer.Reflection.Data
 {
     public class DictionaryDataItemFactory : IDataItemFactory
     {
-        private readonly Dictionary<string, double> map;
-
         private static readonly Logger log = LogManager.GetCurrentClassLogger();
+
+        private readonly Dictionary<string, double> map;
 
         public DictionaryDataItemFactory(Dictionary<string, double> map)
         {

@@ -14,6 +14,6 @@ namespace Wikiled.Text.Inquirer.Reflection
         }
 
         [InfoArrayCategory("List", "Data", "Probability")]
-        public IList<IItemProbability<string>> Probabilities { get; private set; }
+        public IList<IItemProbability<string>> Probabilities { get; }
     }
 }

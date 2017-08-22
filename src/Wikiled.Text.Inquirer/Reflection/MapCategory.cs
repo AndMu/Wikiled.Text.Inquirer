@@ -10,13 +10,13 @@ namespace Wikiled.Text.Inquirer.Reflection
     {
         private readonly List<IMapCategory> categories = new List<IMapCategory>();
 
+        private readonly List<IMapField> fields = new List<IMapField>();
+
         private Lazy<IMapField[]> allChildFields;
 
         private Dictionary<string, IMapField> fieldMap;
 
         private Lazy<Dictionary<string, IMapField>> map;
-
-        private readonly List<IMapField> fields = new List<IMapField>();
 
         private Lazy<IMapField[]> sortedFields;
 

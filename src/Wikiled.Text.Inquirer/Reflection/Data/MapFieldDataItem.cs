@@ -6,11 +6,11 @@ namespace Wikiled.Text.Inquirer.Reflection.Data
     {
         private readonly IMapField field;
 
-        private object currentValue;
-
         private readonly object instance;
 
         private readonly IDataTree parent;
+
+        private object currentValue;
 
         public MapFieldDataItem(IDataTree parent, IMapField field)
         {
@@ -31,7 +31,7 @@ namespace Wikiled.Text.Inquirer.Reflection.Data
 
         public object Value
         {
-            get { return currentValue; }
+            get => currentValue;
             set
             {
                 currentValue = value;

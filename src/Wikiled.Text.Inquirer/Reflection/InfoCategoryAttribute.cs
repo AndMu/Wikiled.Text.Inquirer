@@ -12,10 +12,10 @@ namespace Wikiled.Text.Inquirer.Reflection
             Name = name;
         }
 
-        public string Name { get; private set; }
+        public bool Ignore { get; set; }
 
         public bool IsCollapsed { get; set; }
 
-        public bool Ignore { get; set; }
+        public string Name { get; }
     }
 }
