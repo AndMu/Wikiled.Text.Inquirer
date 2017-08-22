@@ -1,5 +1,5 @@
 ﻿using Wikiled.Text.Inquirer.Data;
-using Wikiled.Text.Inquirer.Reflection;
+using Wikiled.Text.Analysis.Reflection;
 
 namespace Wikiled.Text.Inquirer.Harvard
 {
