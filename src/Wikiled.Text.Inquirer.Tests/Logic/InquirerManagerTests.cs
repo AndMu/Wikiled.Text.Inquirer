@@ -32,6 +32,15 @@ namespace Wikiled.Text.Inquirer.Tests.Logic
         }
 
         [Test]
+        public void SomeOne()
+        {
+            var definitions = manager.GetDefinitions("an");
+            Assert.AreEqual(5, definitions.Records.Length);
+            Assert.AreEqual("78% noun-adj: The physical structure and substance of an animal, living  or dead, usually human", definitions.Records[0].Description.Information);
+            Assert.AreEqual("Noun", definitions.Records[0].Description.OtherTags);
+        }
+
+        [Test]
         public void InquirerDescription()
         {
             InquirerDescription definition = new InquirerDescription();

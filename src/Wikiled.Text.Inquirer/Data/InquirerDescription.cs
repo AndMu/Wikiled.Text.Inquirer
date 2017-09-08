@@ -1,6 +1,7 @@
 ﻿using Wikiled.Text.Inquirer.Harvard;
 using Wikiled.Text.Inquirer.Lasswell;
 using Wikiled.Text.Inquirer.Reflection;
+using Wikiled.Text.Inquirer.Syntactic;
 
 namespace Wikiled.Text.Inquirer.Data
 {
@@ -14,7 +15,11 @@ namespace Wikiled.Text.Inquirer.Data
         {
             Harward = new HarwardDescription();
             Lasswell = new LasswellDescription();
+            Syntactic = new SyntacticDescription();
         }
+
+        [InfoCategory("Syntactic")]
+        public SyntacticDescription Syntactic { get; }
 
         [InfoCategory("Harward")]
         public HarwardDescription Harward { get; }

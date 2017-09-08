@@ -97,6 +97,7 @@
     <Compile Include="Logic\IInquirerManager.cs" />
     <Compile Include="Logic\InquirerDefinitionFactory.cs" />
     <Compile Include="Logic\InquirerManager.cs" />
+    <Compile Include="Syntactic\DeterminerData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\CategoriesMapper.cs" />
     <Compile Include="Reflection\ChildMapCategory.cs" />
@@ -123,6 +124,7 @@
     <Compile Include="Reflection\MapField.cs" />
     <Compile Include="SocialCognition\AdjectiveData.cs" />
     <Compile Include="SocialCognition\VerbData.cs" />
+    <Compile Include="Syntactic\SyntacticDescription.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
