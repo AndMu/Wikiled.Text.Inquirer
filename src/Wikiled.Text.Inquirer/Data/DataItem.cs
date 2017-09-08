@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using Wikiled.Text.Inquirer.Reflection;
+using Wikiled.Text.Analysis.Reflection;
 
 namespace Wikiled.Text.Inquirer.Data
 {

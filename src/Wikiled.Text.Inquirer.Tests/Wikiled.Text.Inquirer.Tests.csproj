@@ -62,16 +62,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\CalculatorTests.cs" />
     <Compile Include="Logic\InquirerManagerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reflection\CategoriesMapperTests.cs" />
-    <Compile Include="Reflection\DataTreeTests.cs" />
-    <Compile Include="Reflection\TestData\AnotherMainItem.cs" />
-    <Compile Include="Reflection\TestData\MainItem.cs" />
-    <Compile Include="Reflection\TestData\ThirdMainItem.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

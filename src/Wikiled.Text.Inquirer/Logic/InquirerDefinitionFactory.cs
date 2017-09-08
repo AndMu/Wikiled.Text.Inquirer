@@ -3,8 +3,8 @@ using System.Linq;
 using NLog;
 using Wikiled.Text.Inquirer.Data;
 using Wikiled.Text.Inquirer.Harvard;
-using Wikiled.Text.Inquirer.Reflection;
-using Wikiled.Text.Inquirer.Reflection.Data;
+using Wikiled.Text.Analysis.Reflection;
+using Wikiled.Text.Analysis.Reflection.Data;
 
 namespace Wikiled.Text.Inquirer.Logic
 {
