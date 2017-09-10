@@ -5,6 +5,7 @@ using Wikiled.Text.Inquirer.Data;
 using Wikiled.Text.Inquirer.Harvard;
 using Wikiled.Text.Analysis.Reflection;
 using Wikiled.Text.Analysis.Reflection.Data;
+using Wikiled.Core.Utility.Extensions;
 
 namespace Wikiled.Text.Inquirer.Logic
 {
@@ -45,7 +46,7 @@ namespace Wikiled.Text.Inquirer.Logic
             }
 
             DataTree tree = new DataTree(description, map);
-            IDictionary<string, IDataItem> leafLookup = tree.AllLeafs.ToDictionary(item => item.Name, item => item);
+            var leafLookup = tree.AllLeafs.ToLookup(item => item.Name);
             int total = 0;
             foreach (var category in record.RawCategories)
             {
@@ -54,31 +55,43 @@ namespace Wikiled.Text.Inquirer.Logic
                 {
                     int index = category.IndexOf("|");
                     description.Information = index == 0
-                                                  ? category.Substring(1).Trim()
+                                                  ? category.Substring(1)
+                                                            .Trim()
                                                   : category;
                 }
                 else if (string.IsNullOrEmpty(category) ||
-                    ignoreTable.ContainsKey(category))
+                         ignoreTable.ContainsKey(category))
                 {
-                }
-                else if (!map.ContainsField(category))
-                {
-                    if (total == record.RawCategories.Length - 1)
-                    {
-                        description.OtherTags = category;
-                    }
-                    else
-                    {
-                        log.Debug("Root field: {0} for word: {1}", category, record.Word);
-                    }
                 }
                 else
                 {
-                    leafLookup[category].Value = true;
+                    ParseSubCategories(category, leafLookup, description);
                 }
             }
 
             return description;
+        }
+
+        private static void ParseSubCategories(string category, ILookup<string, IDataItem> leafLookup, InquirerDescription description)
+        {
+            var subCategories = category.Split(' ');
+            List<string> unknown = new List<string>();
+            foreach (var item in subCategories)
+            {
+                if (!map.ContainsField(item))
+                {
+                    unknown.Add(item);
+                }
+                else
+                {
+                    foreach (var dataItem in leafLookup[item])
+                    {
+                        dataItem.Value = true;
+                    }
+                }
+            }
+
+            description.OtherTags = unknown.AccumulateItems(" ");
         }
     }
 }

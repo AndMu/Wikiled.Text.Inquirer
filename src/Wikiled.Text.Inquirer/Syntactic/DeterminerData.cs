@@ -1,5 +1,5 @@
-﻿using Wikiled.Text.Inquirer.Data;
-using Wikiled.Text.Inquirer.Reflection;
+﻿using Wikiled.Text.Analysis.Reflection;
+using Wikiled.Text.Inquirer.Data;
 
 namespace Wikiled.Text.Inquirer.Syntactic
 {

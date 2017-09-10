@@ -1,6 +1,6 @@
-﻿using Wikiled.Text.Inquirer.Harvard;
+﻿using Wikiled.Text.Analysis.Reflection;
+using Wikiled.Text.Inquirer.Harvard;
 using Wikiled.Text.Inquirer.Lasswell;
-using Wikiled.Text.Inquirer.Reflection;
 using Wikiled.Text.Inquirer.Syntactic;
 
 namespace Wikiled.Text.Inquirer.Data
