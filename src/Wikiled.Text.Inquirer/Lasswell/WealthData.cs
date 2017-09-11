@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Lasswell
     /// <summary>
     /// Wealth is the valuing of having it.
     /// </summary>
-    public class WealthData : DataItem
+    public class WealthData : InquirerItem
     {
         /// <summary>
         /// Wealth participant - various roles in business and commerce.

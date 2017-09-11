@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Lasswell
     /// <summary>
     /// Valuing of status, honor, recognition and prestige
     /// </summary>
-    public class RespectData : DataItem
+    public class RespectData : InquirerItem
     {
         /// <summary>
         /// Garnering of respect, such as congratulations

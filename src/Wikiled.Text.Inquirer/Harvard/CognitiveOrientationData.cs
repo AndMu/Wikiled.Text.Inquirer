@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// Cognitive orientation (knowing, assessment, and problem solving)
     /// </summary>
-    public class CognitiveOrientationData : DataItem
+    public class CognitiveOrientationData : InquirerItem
     {
         /// <summary>
         /// Referring to the presence or absence of rational thought processes.

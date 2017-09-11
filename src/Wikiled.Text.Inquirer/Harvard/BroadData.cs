@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// Broader group
     /// </summary>
-    public class BroadData : DataItem
+    public class BroadData : InquirerItem
     {
         /// <summary>
         /// Political

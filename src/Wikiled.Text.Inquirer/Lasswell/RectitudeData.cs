@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Lasswell
     /// <summary>
     /// Concerned with moral values and has fewer subcategories:
     /// </summary>
-    public class RectitudeData : DataItem
+    public class RectitudeData : InquirerItem
     {
         /// <summary>
         /// Values concerning the social order.

@@ -3,7 +3,7 @@ using Wikiled.Text.Inquirer.Data;
 
 namespace Wikiled.Text.Inquirer.Syntactic
 {
-    public class DeterminerData : DataItem
+    public class DeterminerData : InquirerItem
     {
         /// <summary>
         /// Determiner

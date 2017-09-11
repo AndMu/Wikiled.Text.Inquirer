@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Lasswell
     /// <summary>
     /// Knowledge, insight, and information concerning personal and cultural relations
     /// </summary>
-    public class EnlightenmentData : DataItem
+    public class EnlightenmentData : InquirerItem
     {
         /// <summary>
         /// Likely to reflect a gain in enlightenment through thought, education, etc.

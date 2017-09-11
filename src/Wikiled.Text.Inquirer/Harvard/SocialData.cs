@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// Ascriptive social categories as well as general references to people and animals
     /// </summary>
-    public class SocialData : DataItem
+    public class SocialData : InquirerItem
     {
         /// <summary>
         /// Referring to racial or ethnic characteristics

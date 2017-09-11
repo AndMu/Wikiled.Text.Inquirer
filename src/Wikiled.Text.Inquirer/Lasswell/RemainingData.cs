@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Lasswell
     /// <summary>
     /// Remaining Lasswell dictionary categories not specific to one of the value domains.
     /// </summary>
-    public class RemainingData : DataItem
+    public class RemainingData : InquirerItem
     {
         /// <summary>
         /// General words of accomplishment

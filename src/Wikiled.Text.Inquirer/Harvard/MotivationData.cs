@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// Motivation-related 
     /// </summary>
-    public class MotivationData : DataItem
+    public class MotivationData : InquirerItem
     {
         /// <summary>
         /// Words related to the expression of need or intent.

@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// Indicating overstatement and understatement, often reflecting presence or lack of emotional expressiveness
     /// </summary>
-    public class StatementData : DataItem
+    public class StatementData : InquirerItem
     {
         /// <summary>
         /// Indicating emphasis in realms of speed, frequency, causality, inclusiveness, quantity or quasi-quantity, accuracy, validity, scope, size, clarity, exceptionality, intensity, likelihood, certainty and extremity.

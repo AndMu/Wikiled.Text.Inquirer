@@ -62,9 +62,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logic\DeterminerTests.cs" />
+    <Compile Include="Logic\DeterminerDataTests.cs" />
     <Compile Include="Logic\Global.cs" />
     <Compile Include="Logic\InquirerManagerTests.cs" />
+    <Compile Include="Logic\ConjunctionDataTests.cs" />
+    <Compile Include="Logic\InterrogativeDataTests.cs" />
+    <Compile Include="Logic\VerbDataTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

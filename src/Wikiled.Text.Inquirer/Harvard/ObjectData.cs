@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// References to objects
     /// </summary>
-    public class ObjectData : DataItem
+    public class ObjectData : InquirerItem
     {
         /// <summary>
         /// Object

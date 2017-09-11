@@ -7,7 +7,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// Are usually also classified positive or negative, with virtue indicating strength and vice indicating weakness. 
     /// They provide more focus than the categories in the first two sections.
     /// </summary>
-    public class FeelingData : DataItem
+    public class FeelingData : InquirerItem
     {
         /// <summary>
         /// Indicating the enjoyment of a feeling, including words indicating confidence, interest and commitment.

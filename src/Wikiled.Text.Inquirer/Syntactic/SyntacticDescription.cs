@@ -7,6 +7,9 @@ namespace Wikiled.Text.Inquirer.Syntactic
         public SyntacticDescription()
         {
             Determiner = new DeterminerData();
+            Conjunction = new ConjunctionData();
+            Interrogative = new InterrogativesData();
+            Verb = new VerbData();
         }
 
         /// <summary>
@@ -14,5 +17,23 @@ namespace Wikiled.Text.Inquirer.Syntactic
         /// </summary>
         [InfoCategory("Determiner")]
         public DeterminerData Determiner { get; }
+
+        /// <summary>
+        /// Conjunction
+        /// </summary>
+        [InfoCategory("Conjunction")]
+        public ConjunctionData Conjunction { get; }
+
+        /// <summary>
+        /// Interrogative
+        /// </summary>
+        [InfoCategory("Interrogative")]
+        public InterrogativesData Interrogative { get; }
+
+        /// <summary>
+        /// Verb
+        /// </summary>
+        [InfoCategory("Verb")]
+        public VerbData Verb { get; }
     }
 }

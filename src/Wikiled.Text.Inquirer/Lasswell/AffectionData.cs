@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Lasswell
     /// <summary>
     /// Affection is the valuing of love and friendship
     /// </summary>
-    public class AffectionData : DataItem
+    public class AffectionData : InquirerItem
     {
         /// <summary>
         /// Words for reaping affect

@@ -7,7 +7,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// Referring to roles, collectivities, rituals, and forms of interpersonal relations, 
     /// often within one of these institutional contexts.
     /// </summary>
-    public class ActivityData : DataItem
+    public class ActivityData : InquirerItem
     {
         /// <summary>
         /// Referring to identifiable and standardized individual human behavior patterns, as used by sociologists.

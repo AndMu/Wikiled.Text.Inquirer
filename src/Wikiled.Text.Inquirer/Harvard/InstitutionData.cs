@@ -7,7 +7,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// Reflect a sociological perspective, especially as reflected in the writings of Talcott Parsons. 
     /// A high score reflects use of the language of that institution, talking like a lawyer, professor, or military officer
     /// </summary>
-    public class InstitutionData : DataItem
+    public class InstitutionData : InquirerItem
     {
         /// <summary>
         /// A clear political character, including political roles, collectivities, acts, ideas, ideologies, and symbols.

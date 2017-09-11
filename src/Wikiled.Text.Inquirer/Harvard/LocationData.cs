@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// References to places, locations and routes between them
     /// </summary>
-    public class LocationData : DataItem
+    public class LocationData : InquirerItem
     {
         /// <summary>
         /// Place

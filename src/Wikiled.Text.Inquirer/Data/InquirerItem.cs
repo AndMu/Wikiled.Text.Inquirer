@@ -5,7 +5,7 @@ using Wikiled.Text.Analysis.Reflection;
 
 namespace Wikiled.Text.Inquirer.Data
 {
-    public abstract class DataItem
+    public abstract class InquirerItem
     {
         private PropertyInfo[] properties;
 

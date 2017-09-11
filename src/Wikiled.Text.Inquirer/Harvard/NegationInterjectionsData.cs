@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// "Yes", "No", negation and interjections.
     /// </summary>
-    public class NegationInterjectionsData : DataItem
+    public class NegationInterjectionsData : InquirerItem
     {
         /// <summary>
         /// Directly indicating agreement, including word senses "of course", "to say the least", "all right".

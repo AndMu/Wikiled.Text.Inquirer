@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Lasswell
     /// <summary>
     ///     A valuing of having the influence to affect the policies of others.
     /// </summary>
-    public class PowerData : DataItem
+    public class PowerData : InquirerItem
     {
         public override string Name => "Power";
 

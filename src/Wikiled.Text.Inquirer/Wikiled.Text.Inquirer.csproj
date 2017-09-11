@@ -91,7 +91,7 @@
     <Compile Include="..\GlobalAssemblyInfo.cs">
       <Link>GlobalAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="Data\DataItem.cs" />
+    <Compile Include="Data\InquirerItem.cs" />
     <Compile Include="Data\InquirerDefinition.cs" />
     <Compile Include="Data\InquirerDescription.cs" />
     <Compile Include="Data\InquirerRecord.cs" />
@@ -125,11 +125,14 @@
     <Compile Include="Logic\IInquirerManager.cs" />
     <Compile Include="Logic\InquirerDefinitionFactory.cs" />
     <Compile Include="Logic\InquirerManager.cs" />
+    <Compile Include="Syntactic\ConjunctionData.cs" />
     <Compile Include="Syntactic\DeterminerData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocialCognition\AdjectiveData.cs" />
     <Compile Include="SocialCognition\VerbData.cs" />
+    <Compile Include="Syntactic\InterrogativesData.cs" />
     <Compile Include="Syntactic\SyntacticDescription.cs" />
+    <Compile Include="Syntactic\VerbData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

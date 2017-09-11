@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// These categories reflect Charles Osgood's semantic differential findings regarding basic language universals.
     /// </summary>
-    public class SentimentData : DataItem
+    public class SentimentData : InquirerItem
     {
         public SentimentData(PositivityType type)
         {

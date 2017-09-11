@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Lasswell
     /// <summary>
     /// Well-being refers, according to Lasswell, to the "health and safety of the organism".
     /// </summary>
-    public class WellBeingData : DataItem
+    public class WellBeingData : InquirerItem
     {
         /// <summary>
         /// Words related to a gain in well being

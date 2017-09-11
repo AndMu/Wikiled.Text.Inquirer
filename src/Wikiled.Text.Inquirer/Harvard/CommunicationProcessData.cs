@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// Processes of communicating
     /// </summary>
-    public class CommunicationProcessData : DataItem
+    public class CommunicationProcessData : InquirerItem
     {
         /// <summary>
         /// Relating to the form, format or media of the communication transaction.

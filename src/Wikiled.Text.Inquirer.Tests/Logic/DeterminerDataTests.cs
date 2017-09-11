@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Wikiled.Text.Inquirer.Tests.Logic
 {
     [TestFixture]
-    public class DeterminerTests
+    public class DeterminerDataTests
     {
         [Test]
         public void Article()

@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// Other process or change words
     /// </summary>
-    public class OtherProcessData : DataItem
+    public class OtherProcessData : InquirerItem
     {
         /// <summary>
         /// Processes found in nature, birth to death.

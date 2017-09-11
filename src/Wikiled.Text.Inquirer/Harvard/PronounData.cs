@@ -6,7 +6,7 @@ namespace Wikiled.Text.Inquirer.Harvard
     /// <summary>
     /// Pronoun reflecting an "I" vs. "we" vs. "you" orientation, as well as names
     /// </summary>
-    public class PronounData : DataItem
+    public class PronounData : InquirerItem
     {
         /// <summary>
         /// Pronoun referring to the singular self
