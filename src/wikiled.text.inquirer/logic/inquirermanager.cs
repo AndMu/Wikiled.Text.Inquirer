@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Wikiled.ateCommon.Arguments;
+using Wikiled.Common.Arguments;
 using Wikiled.Common.Extensions;
 using Wikiled.Common.Helpers;
 using Wikiled.Common.Resources;
