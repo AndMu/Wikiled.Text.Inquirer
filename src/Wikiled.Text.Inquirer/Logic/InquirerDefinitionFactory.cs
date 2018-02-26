@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using NLog;
-using Wikiled.Text.Inquirer.Data;
-using Wikiled.Text.Inquirer.Harvard;
+using Wikiled.Common.Extensions;
 using Wikiled.Text.Analysis.Reflection;
 using Wikiled.Text.Analysis.Reflection.Data;
-using Wikiled.Core.Utility.Extensions;
+using Wikiled.Text.Inquirer.Data;
+using Wikiled.Text.Inquirer.Harvard;
 
 namespace Wikiled.Text.Inquirer.Logic
 {
@@ -91,7 +91,11 @@ namespace Wikiled.Text.Inquirer.Logic
                 }
             }
 
-            description.OtherTags = unknown.AccumulateItems(" ");
+            if (unknown.Count > 0)
+            {
+                description.OtherTags = unknown.AccumulateItems(" ");
+                log.Debug($"Other tags: {description.OtherTags}");
+            }
         }
     }
 }

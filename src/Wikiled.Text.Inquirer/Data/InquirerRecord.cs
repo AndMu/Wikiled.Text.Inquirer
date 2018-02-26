@@ -1,4 +1,4 @@
-﻿using Wikiled.Core.Utility.Arguments;
+﻿using Wikiled.Common.Arguments;
 using Wikiled.Text.Inquirer.Logic;
 
 namespace Wikiled.Text.Inquirer.Data
