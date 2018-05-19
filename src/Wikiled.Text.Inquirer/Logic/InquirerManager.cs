@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Wikiled.Core.Utility.Arguments;
-using Wikiled.Core.Utility.Extensions;
-using Wikiled.Core.Utility.Helpers;
-using Wikiled.Core.Utility.Resources;
+using Wikiled.Common.Arguments;
+using Wikiled.Common.Extensions;
+using Wikiled.Common.Helpers;
+using Wikiled.Common.Resources;
 using Wikiled.Text.Inquirer.Data;
 
 namespace Wikiled.Text.Inquirer.Logic
