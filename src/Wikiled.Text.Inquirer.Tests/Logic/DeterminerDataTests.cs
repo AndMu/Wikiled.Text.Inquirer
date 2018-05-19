@@ -26,7 +26,6 @@ namespace Wikiled.Text.Inquirer.Tests.Logic
             Assert.IsFalse(definition.Description.Syntactic.Determiner.IsPrearticle2);
         }
 
-        [TestCase("one")]
         [TestCase("two")]
         [TestCase("four")]
         [TestCase("five")]
