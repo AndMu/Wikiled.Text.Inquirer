@@ -19,8 +19,7 @@ namespace Wikiled.Text.Inquirer.Logic
         public InquirerDefinition GetDefinitions(string word)
         {
             Guard.NotNullOrEmpty(() => word, word);
-            List<InquirerRecord> definitions;
-            if (items.TryGetValue(word, out definitions))
+            if (items.TryGetValue(word, out var definitions))
             {
                 return new InquirerDefinition(word, definitions.ToArray());
             }

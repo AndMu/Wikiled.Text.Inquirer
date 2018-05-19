@@ -26,10 +26,13 @@ namespace Wikiled.Text.Inquirer.Tests.Logic
             Assert.IsFalse(definition.Description.Syntactic.Determiner.IsPrearticle2);
         }
 
-        [Test]
-        public void Card()
+        [TestCase("one")]
+        [TestCase("two")]
+        [TestCase("four")]
+        [TestCase("five")]
+        public void Card(string word)
         {
-            var definitions = Global.Manager.GetDefinitions("two");
+            var definitions = Global.Manager.GetDefinitions(word);
             Assert.AreEqual(1, definitions.Records.Length);
             var definition = definitions.Records.First();
             Assert.IsFalse(definition.Description.Syntactic.Determiner.IsArticle);
