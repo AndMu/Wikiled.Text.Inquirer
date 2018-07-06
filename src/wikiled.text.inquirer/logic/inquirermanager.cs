@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Wikiled.Common.Arguments;
 using Wikiled.Common.Extensions;
 using Wikiled.Common.Helpers;
 using Wikiled.Common.Resources;
@@ -18,7 +17,11 @@ namespace Wikiled.Text.Inquirer.Logic
 
         public InquirerDefinition GetDefinitions(string word)
         {
-            Guard.NotNullOrEmpty(() => word, word);
+            if (string.IsNullOrEmpty(word))
+            {
+                throw new ArgumentException("Value cannot be null or empty.", nameof(word));
+            }
+
             if (items.TryGetValue(word, out var definitions))
             {
                 return new InquirerDefinition(word, definitions.ToArray());
