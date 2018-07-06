@@ -1,4 +1,4 @@
-﻿using Wikiled.Common.Arguments;
+﻿using System;
 
 namespace Wikiled.Text.Inquirer.Data
 {
@@ -6,10 +6,13 @@ namespace Wikiled.Text.Inquirer.Data
     {
         public InquirerDefinition(string word, InquirerRecord[] records)
         {
-            Guard.NotNullOrEmpty(() => word, word);
-            Guard.NotNull(() => records, records);
+            if (string.IsNullOrEmpty(word))
+            {
+                throw new ArgumentException("Value cannot be null or empty.", nameof(word));
+            }
+
             Word = word;
-            Records = records;
+            Records = records ?? throw new ArgumentNullException(nameof(records));
         }
 
         public string Word { get; }
