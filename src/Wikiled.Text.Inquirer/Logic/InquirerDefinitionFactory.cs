@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NLog;
+using Microsoft.Extensions.Logging;
 using Wikiled.Common.Extensions;
+using Wikiled.Common.Logging;
 using Wikiled.Text.Analysis.Reflection;
 using Wikiled.Text.Analysis.Reflection.Data;
 using Wikiled.Text.Inquirer.Data;
@@ -13,7 +14,7 @@ namespace Wikiled.Text.Inquirer.Logic
     {
         public static readonly InquirerDefinitionFactory Instance = new InquirerDefinitionFactory();
 
-        private static readonly Logger log = LogManager.GetCurrentClassLogger();
+        private static readonly ILogger log = ApplicationLogging.LoggerFactory.CreateLogger<InquirerDefinitionFactory>();
 
         private static readonly IMapCategory map = new CategoriesMapper().Construct<InquirerDescription>();
 
@@ -94,7 +95,7 @@ namespace Wikiled.Text.Inquirer.Logic
             if (unknown.Count > 0)
             {
                 description.OtherTags = unknown.AccumulateItems(" ");
-                log.Debug($"Other tags: {description.OtherTags}");
+                log.LogDebug($"Other tags: {description.OtherTags}");
             }
         }
     }
