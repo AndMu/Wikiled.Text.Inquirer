@@ -95,7 +95,7 @@ namespace Wikiled.Text.Inquirer.Logic
             if (unknown.Count > 0)
             {
                 description.OtherTags = unknown.AccumulateItems(" ");
-                log.LogDebug($"Other tags: {description.OtherTags}");
+                log.LogTrace($"Other tags: {description.OtherTags}");
             }
         }
     }
