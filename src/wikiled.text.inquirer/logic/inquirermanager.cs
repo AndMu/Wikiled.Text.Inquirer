@@ -13,10 +13,17 @@ namespace Wikiled.Text.Inquirer.Logic
     {
         private readonly Dictionary<string, List<InquirerRecord>> items = new Dictionary<string, List<InquirerRecord>>(StringComparer.OrdinalIgnoreCase);
 
+        private bool isLoaded = false;
+
         public int Total => items.Count;
 
         public InquirerDefinition GetDefinitions(string word)
         {
+            if (!isLoaded)
+            {
+                throw new InvalidOperationException("Not loaded");
+            }
+
             if (string.IsNullOrEmpty(word))
             {
                 throw new ArgumentException("Value cannot be null or empty.", nameof(word));
@@ -32,6 +39,7 @@ namespace Wikiled.Text.Inquirer.Logic
 
         public void Load()
         {
+            isLoaded = true;
             ReadDataFromInternalStream();
         }
 
