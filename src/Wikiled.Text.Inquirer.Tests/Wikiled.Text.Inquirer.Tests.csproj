@@ -9,7 +9,8 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>    
+    </PackageReference>
+    <packagereference Include="Microsoft.NET.Test.Sdk" Version="16.5.0"></packagereference>
     <PackageReference Include="Wikiled.Arff" Version="2.2.24" />
     <PackageReference Include="Wikiled.Common" Version="1.1.10" />
   </ItemGroup>
