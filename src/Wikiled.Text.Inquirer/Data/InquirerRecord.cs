@@ -7,11 +7,6 @@ namespace Wikiled.Text.Inquirer.Data
     {
         public InquirerRecord(string word, string[] categories)
         {
-            if (categories == null)
-            {
-                throw new ArgumentNullException(nameof(categories));
-            }
-
             if (string.IsNullOrEmpty(word))
             {
                 throw new ArgumentException("Value cannot be null or empty.", nameof(word));

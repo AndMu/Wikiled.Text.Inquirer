@@ -70,6 +70,9 @@ namespace Wikiled.Text.Inquirer.Logic
                 }
             }
 
+            description.Attributes = tree.AllLeafs.Where(item => Equals(item.Value, true))
+                                         .Select(item => item.Description)
+                                         .ToArray();
             return description;
         }
 

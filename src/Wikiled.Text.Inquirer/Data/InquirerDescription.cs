@@ -18,6 +18,8 @@ namespace Wikiled.Text.Inquirer.Data
             Syntactic = new SyntacticDescription();
         }
 
+        public string[] Attributes { get; set; }
+
         [InfoCategory("Syntactic")]
         public SyntacticDescription Syntactic { get; }
 

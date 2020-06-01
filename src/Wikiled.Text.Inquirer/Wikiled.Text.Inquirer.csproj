@@ -32,9 +32,9 @@
 
   <ItemGroup>
     <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
-    <PackageReference Include="Wikiled.Arff" Version="2.2.12" />
-    <PackageReference Include="Wikiled.Common" Version="1.1.5" />
-    <PackageReference Include="Wikiled.Text.Analysis" Version="1.7.0" />
+    <PackageReference Include="Wikiled.Arff" Version="2.2.24" />
+    <PackageReference Include="Wikiled.Common" Version="1.1.10" />
+    <PackageReference Include="Wikiled.Text.Analysis" Version="1.7.63" />
   </ItemGroup>
 
 </Project>
